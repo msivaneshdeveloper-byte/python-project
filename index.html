@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AUTOFOODZ — Fresh Food. Smart Automation.</title>
+<meta name="description" content="AI-powered food production and smart delivery. Robotic kitchens, sensor-monitored quality, and a nationwide warehouse network." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">AUTO<span>FOODZ</span>.</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#how">How It Works</a>
+        <a href="#warehouses">Network</a>
+        <a href="#offers">Offers</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#menu" class="btn btn-red">Order Now</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="chip">✦ Fresh Food. Smart Automation.</span>
+      <h1>AUTO<span class="red">FOODZ</span></h1>
+      <p class="lead">AI-Powered Food Production &amp; Smart Delivery.</p>
+      <p class="sub">From ingredients to delivery, every step is monitored by intelligent automation and quality control systems.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-red">Order Now →</a>
+        <a href="#menu" class="btn btn-white">Explore Menu</a>
+        <a href="#how" class="btn btn-ghost">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERKS -->
+  <section class="perks">
+    <div class="container perks-grid">
+      <div class="perk"><div class="perk-icon">🚚</div><div><h4>30-min delivery</h4><p>Fast, sensor-tracked routes from kitchen to door.</p></div></div>
+      <div class="perk"><div class="perk-icon">🛡️</div><div><h4>AI quality control</h4><p>Every dish inspected before it leaves the line.</p></div></div>
+      <div class="perk"><div class="perk-icon">⏱️</div><div><h4>Always fresh</h4><p>Cooked to order — never reheated, never frozen.</p></div></div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">On the menu</p>
+          <h2>Today's picks</h2>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="products" id="products"></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section dark">
+    <div class="container">
+      <div class="section-head center">
+        <div>
+          <p class="eyebrow red">How It Works</p>
+          <h2 class="white">Smart Food Automation</h2>
+          <p class="muted-white">A fully orchestrated pipeline — from raw ingredients to your doorstep — with intelligent checks at every stage.</p>
+        </div>
+      </div>
+      <div class="workflow" id="workflow"></div>
+    </div>
+  </section>
+
+  <!-- WAREHOUSES -->
+  <section id="warehouses" class="section">
+    <div class="container">
+      <div class="section-head center">
+        <div>
+          <p class="eyebrow">Warehouse Network</p>
+          <h2>India-wide, real-time</h2>
+          <p class="muted">Six smart kitchens, sensor-monitored inventory, live dispatch — visibility from cook to courier.</p>
+        </div>
+      </div>
+      <div class="warehouses" id="warehouses-grid"></div>
+    </div>
+  </section>
+
+  <!-- OFFERS -->
+  <section id="offers" class="section soft">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Offers &amp; Deals</p>
+          <h2>Limited-time pricing</h2>
+        </div>
+        <div class="countdown" id="countdown"></div>
+      </div>
+      <div class="offers" id="offers-grid"></div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-head center">
+        <div>
+          <p class="eyebrow">Community</p>
+          <h2>Loved by 50,000+ customers</h2>
+        </div>
+      </div>
+      <div class="reviews" id="reviews-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section dark">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow red">Contact</p>
+        <h2 class="white">Get in touch</h2>
+        <p class="muted-white">Questions about your order, partnerships, or our automation? We're here to help.</p>
+        <ul class="contact-info">
+          <li>📧 hello@autofoodz.com</li>
+          <li>📞 +91 80 4567 8900</li>
+          <li>📍 Bangalore · Mumbai · Delhi · Chennai · Hyderabad · Pune</li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Email address" required />
+        <textarea rows="4" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn btn-red">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="logo">AUTO<span>FOODZ</span>.</p>
+        <p class="muted">Fresh Food. Smart Automation.</p>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Twitter">X</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+      <p class="copy">© 2026 AUTOFOODZ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+  <div class="chatbot">
+    <div class="chat-panel" id="chatPanel" hidden>
+      <p class="chat-title">AUTOFOODZ Assistant</p>
+      <p class="chat-sub">How can I help you today?</p>
+      <div class="chat-options">
+        <button>Recommend a meal</button>
+        <button>Track my order</button>
+        <button>Today's offers</button>
+        <button>Combo suggestions</button>
+      </div>
+    </div>
+    <button class="chat-fab" id="chatFab" aria-label="AI Assistant">🤖</button>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
